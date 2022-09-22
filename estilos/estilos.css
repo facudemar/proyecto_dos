@@ -1,0 +1,170 @@
+/* Fuente para banner*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* Reseteo*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Index*/
+/* BANNER*/
+
+.banner{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.banner .saludo{
+    color: white;
+    font-size: 72px;
+    text-transform: uppercase;
+    text-align:left;
+    bottom: 50%;
+    line-height: 300px;
+    font-family: roboto Condensed;
+}
+
+.banner .saludo span{
+    transition: text-shadow 0.6s;
+}
+.banner .saludo span:hover{
+    text-shadow: 0px -3px 6px white,0px 4px 6px white,
+    3px 0px 6px white,-4px 0px 6px white;
+}
+
+.luna{
+    height: 200px;
+    width: 254px;
+    transform: rotateY(180deg);
+    align-self: center;
+}
+
+/* NAV*/
+.menu{
+    background-color: rgb(17, 16, 16);
+}
+
+.menu .navegacion .lista{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 15px;
+    margin: 0px;
+    list-style: none;
+}
+
+.navegacion .lista li a{
+    list-style-type: none;
+    margin-right: 75px;
+    color: white;
+    text-decoration: none;
+    font-family: roboto Condensed;
+    transition: text-shadow 1s;
+}
+
+.navegacion .lista li a:hover{
+    text-shadow: 0px -3px 6px white,0px 4px 6px white;
+}
+/*SECTION*/
+section{
+    background-image: url(../fondos/telaraña_escritorio.jpg);
+    height: auto;
+    width: auto;
+}
+section p{
+    color: aqua;
+}
+
+
+/* FOOTER*/
+footer{
+    background-color: black;
+    display: flex;
+    margin-top: 4px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: auto;
+    height: auto;
+    
+}
+/*div redes*/
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 400px;
+    width: 400px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.redes img{
+    height: 100px;
+    width: 100px;
+}
+/*div tarjetas*/
+.tarjetas{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: 290px ;
+    gap: 4px 4px;
+    align-items: flex-end;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.tarjetas img{
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+/*div preguntas*/
+
+.links_id ul a{
+    font-family: roboto Condensed;
+    text-decoration: none;
+    color: white;
+}
+
+.links_id ul{
+    color: white;
+    margin-top: 25px;
+}
+.links_id{
+    display: grid;
+    align-items:flex-end;
+    align-content: flex-end;
+
+}
+/* Nosotros */
+h2{
+    color: red;
+    font-family: roboto Condensed;
+}
+.preguntas{
+    color: red;
+    font-family: roboto Condensed;
+    text-transform: uppercase;
+}
+.respuestas{
+    font-family: roboto Condensed;
+    color: purple;
+}
+
+/* Remeras */
+
+section{
+    display: grid;
+    grid-template-areas: "img img img img";
+    
+}
+section .remeras img{
+    height: 320px;
+    width: 307;
+}
