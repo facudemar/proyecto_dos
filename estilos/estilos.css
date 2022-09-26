@@ -143,6 +143,11 @@ footer{
 
 }
 /* Nosotros */
+.preguntas_nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 h2{
     color: red;
     font-family: roboto Condensed;
@@ -159,12 +164,58 @@ h2{
 
 /* Remeras */
 
-section{
-    display: grid;
-    grid-template-areas: "img img img img";
-    
+.nombre_item{
+    justify-self: center;
+    color:white;
+    grid-area: nom_item;
 }
-section .remeras img{
+.pie_imagen{
+    width: 320px;
+    height: 60px;
+}
+.precio{
+    color: white;
+    grid-area: precio;
+}
+.contenedora{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imagen{
+    margin: 5px;
+}
+.contenedora .imagen{
+    display: flex;
+    flex-direction: column;
+}
+.pie_imagen{
+    display: grid;
+    width: 320px;
+    grid-template-areas: "nom_item nom_item nom_item nom_item"
+                        "precio precio agregar carrito";
+}
+
+.carrito{
+    grid-area: carrito;
+    color: white;
+    justify-self: end;
+}
+.agregar{
+    grid-area: agregar;
+    color: white;
+    justify-self: end;
+}
+span{
+    font-family: roboto Condensed;
+}
+.nombre_item{
+    color: red;
+}
+
+
+/* Vista generica de productos */
+section img{
     height: 320px;
-    width: 307;
+    width: 320px;
 }
