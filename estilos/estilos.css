@@ -72,56 +72,54 @@ section{
     background-image: url(../fondos/telaraña_escritorio.jpg);
     height: auto;
     width: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
-section p{
-    color: aqua;
-}
-
 
 /* FOOTER*/
 footer{
-    background-color: black;
+    background-color: rgb(26, 25, 25);
     display: flex;
     margin-top: 4px;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: auto;
+    justify-content: start;
+    margin-bottom: 10px;
     height: auto;
-    
+    padding: auto;
 }
 /*div redes*/
 .redes{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    height: 400px;
-    width: 400px;
-    align-items: flex-end;
+    flex-direction: column;
+    height: 200px;
+    width: 350px;
+    align-items: flex-start;
     justify-content: space-evenly;
 }
 .redes img{
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 40px;
 }
 /*div tarjetas*/
 .tarjetas{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    grid-template-rows: 290px ;
-    gap: 4px 4px;
-    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     bottom: 0;
-    margin: auto;
+    margin: 0px;
+    width: 450px;
 }
 
 
 .tarjetas img{
-    margin: 0px;
+    margin: 3px;
     margin-top: 0px;
     margin-bottom: 0px;
     height: 50px;
     width: 50px;
+    border: 15px;
 }
 
 /*div preguntas*/
@@ -130,27 +128,43 @@ footer{
     font-family: roboto Condensed;
     text-decoration: none;
     color: white;
+    transition: text-shadow 0.6s;
 }
-
+.links_id ul a:hover{
+    text-shadow: 0px -3px 6px white,0px 4px 6px white,
+    3px 0px 6px white,-4px 0px 6px white;
+}
 .links_id ul{
     color: white;
     margin-top: 25px;
 }
 .links_id{
-    display: grid;
-    align-items:flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-content: flex-end;
-
+    width: 550px;
+    align-items: center;
 }
+
+
+
+
+
 /* Nosotros */
 .preguntas_nosotros{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width: auto;
+    height: auto;
 }
 h2{
     color: red;
     font-family: roboto Condensed;
+    margin: 15px;
 }
 .preguntas{
     color: red;
@@ -159,7 +173,10 @@ h2{
 }
 .respuestas{
     font-family: roboto Condensed;
-    color: purple;
+    color: black;
+    font-size: 20px;
+    -webkit-text-stroke:0.8px white;
+    
 }
 
 /* Remeras */
@@ -219,3 +236,5 @@ section img{
     height: 320px;
     width: 320px;
 }
+
+
