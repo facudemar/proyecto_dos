@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
     <title>Noche Negra</title>
 </head>
 <body>
@@ -42,27 +42,28 @@
             </ul>
         </nav>
     </main>
-    <section>
-        <h2>Ofertas</h2>
+    <section class="contenedor-carrusel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active ej">
                     <a href="secciones/remeras.html#remera-tres">
-                        <img src="fotos_remeras/remera_tres.jpg" class="d-block w-100 ft" alt="oferta de remera gotica de gato">
+                        <img src="fotos_remeras/remera_tres.jpg" class="d-block img-carrusel" alt="oferta de remera gotica de gato">
                     </a>
                 </div>
                 <div class="carousel-item ej">
                     <a href="secciones/buzos.html#buzo-tres">
-                        <img src="fotos_buzos/buzo_tres.jpg" class="d-block w-100 ft" alt="buzo negro con pentagrama blanco">
+                        <img src="fotos_buzos/buzo_tres.jpg" class="d-block img-carrusel" alt="buzo negro con pentagrama blanco">
                     </a>
                 </div>
                 <div class="carousel-item ej">
-                    <img src="" class="d-block w-50 ft" alt="...">
+                    <a href="secciones/calzado.html#bota-militar">
+                        <img src="fotos_botas/botas_quince.jpg" class="d-block img-carrusel" alt="buzo negro con pentagrama blanco">
+                    </a>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -99,5 +100,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
