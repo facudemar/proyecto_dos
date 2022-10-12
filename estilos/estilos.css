@@ -2,30 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 /* Reseteo*/
-
 *{
     margin: 0;
     padding: 0;
 }
-/* Index*/
-/* BANNER*/
-
+/* Mobile First*/
+body{
+    text-align: center;
+    font-family:roboto Condensed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .banner{
-    background-color: black;
+    font-size: large;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    background-color: black;
 }
 .banner .saludo{
+    background-color: black;
     color: white;
-    font-size: 72px;
-    text-transform: uppercase;
-    text-align:left;
-    bottom: 50%;
-    line-height: 300px;
-    font-family: roboto Condensed;
 }
-
 .banner .saludo span{
     transition: text-shadow 0.6s;
 }
@@ -33,31 +31,29 @@
     text-shadow: 0px -3px 6px white,0px 4px 6px white,
     3px 0px 6px white,-4px 0px 6px white;
 }
-
 .luna{
-    height: 200px;
-    width: 254px;
+    height: 100px;
+    width: 100px;
     transform: rotateY(180deg);
-    align-self: center;
+    align-self: flex-end;
+    background-color: black;
+    justify-content: end;
 }
-
-/* NAV*/
 .menu{
     background-color: rgb(17, 16, 16);
 }
-
 .menu .navegacion .lista{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    padding: 15px;
+    flex-direction: column;
+    padding: 0px;
     margin: 0px;
     list-style: none;
 }
 
 .navegacion .lista li a{
     list-style-type: none;
-    margin-right: 75px;
+    margin-right: 0px;
     color: white;
     text-decoration: none;
     font-family: roboto Condensed;
@@ -75,7 +71,11 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-
+h2{
+    color: red;
+    font-family: roboto Condensed;
+    margin: 15px;
+}
 /* FOOTER*/
 footer{
     background-color: rgb(26, 25, 25);
@@ -83,7 +83,7 @@ footer{
     margin-top: 4px;
     flex-direction: row;
     justify-content: start;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     height: auto;
     padding: auto;
 }
@@ -106,7 +106,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     bottom: 0;
     margin: 0px;
     width: 450px;
@@ -148,9 +147,6 @@ footer{
 }
 
 
-
-
-
 /* Nosotros */
 .preguntas_nosotros{
     display: flex;
@@ -161,11 +157,7 @@ footer{
     width: auto;
     height: auto;
 }
-h2{
-    color: red;
-    font-family: roboto Condensed;
-    margin: 15px;
-}
+
 .preguntas{
     color: red;
     font-family: roboto Condensed;
@@ -179,15 +171,13 @@ h2{
     
 }
 
-/* Remeras */
-
 .nombre_item{
     justify-self: center;
     color:white;
     grid-area: nom_item;
 }
 .pie_imagen{
-    width: 320px;
+    width: 300px;
     height: 60px;
 }
 .precio{
@@ -236,5 +226,3 @@ section img{
     height: 320px;
     width: 320px;
 }
-
-
