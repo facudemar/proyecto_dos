@@ -1,0 +1,28 @@
+/*SECTION*/
+section{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        height: 320px;
+        width: 320px;
+    }
+}
+h2{
+    color: red;
+    font-family: roboto Condensed;
+    margin: 15px;
+}
+.h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    line-height: 2;
+    align-self: center;
+}
+svg{
+    color: white;
+    height: 18px;
+    width: 22px;
+}

@@ -1,0 +1,22 @@
+/* Nosotros */
+.preguntas_nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.preguntas{
+    color: red;
+    font-family: roboto Condensed;
+    text-transform: uppercase;
+}
+.respuestas{
+    font-family: roboto Condensed;
+    color: black;
+    font-size: 20px;
+    -webkit-text-stroke:0.8px white; 
+}

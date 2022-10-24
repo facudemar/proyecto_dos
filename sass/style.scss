@@ -1,268 +1,10 @@
-/* Fuente para banner*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-/* Reseteo*/
-*{
-    margin: 0;
-    padding: 0;
-}
+@import "fuentes";
+@import "generalidades";
+@import "carrusel";
+@import "secciones";
+@import "nosotros";
 
-/* Carrusel */
-.carousel{
-    height: 320px;
-    width: 320px;
-}
-
-.contenedor-carrusel{
-    justify-content: center;
-}
-.img-carrusel{
-    height: 320px;
-    width: 320px;
-}
-
-.h1, h1 {
-    font-size:30px;
-    font-weight: bold;
-}
-/*body*/
-body{
-    font-family:roboto Condensed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url(../fondos/telaraña_escritorio.jpg);
-}
-.banner{
-    font-size: large;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    justify-content: space-around;
-    
-}
-.banner .saludo{
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    font-family:roboto Condensed;
-    align-self: center;
-}
-.banner .saludo span{
-    transition: text-shadow 0.6s;
-}
-.banner .saludo span:hover{
-    text-shadow: 0px -3px 6px white,0px 4px 6px white,
-    3px 0px 6px white,-4px 0px 6px white;
-}
-.luna{
-    height: 100px;
-    width: 100px;
-    transform: rotateY(180deg);
-    align-self: flex-end;
-    background-color: black;
-    justify-content: end;
-}
-.menu{
-    background-color: rgb(17, 16, 16);
-}
-.menu .navegacion .lista{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-}
-
-.navegacion .lista li a{
-    list-style-type: none;
-    margin-right: 0px;
-    color: white;
-    text-decoration: none;
-    font-family: roboto Condensed;
-    transition: text-shadow 1s;
-}
-
-.navegacion .lista li a:hover{
-    text-shadow: 0px -3px 6px white,0px 4px 6px white;
-}
-/*SECTION*/
-section{
-    
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-h2{
-    color: red;
-    font-family: roboto Condensed;
-    margin: 15px;
-}
-.h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 800;
-    line-height: 2;
-    align-self: center;
-}
-svg{
-    color: white;
-    height: 18px;
-    width: 22px;
-}
-/* FOOTER*/
-footer{
-    background-color: rgb(26, 25, 25);
-    display: flex;
-    margin-top: 4px;
-    flex-direction: row;
-    justify-content: start;
-    margin-bottom: 0px;
-    height: auto;
-    padding: auto;
-}
-/*div redes*/
-.redes{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 200px;
-    width: 350px;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-.redes img{
-    height: 40px;
-    width: 40px;
-}
-/*div tarjetas*/
-.tarjetas{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    bottom: 0;
-    margin: 0px;
-    width: 450px;
-}
-
-
-.tarjetas img{
-    margin: 3px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 50px;
-    width: 50px;
-    border: 15px;
-}
-
-/*div preguntas*/
-
-.links_id ul a{
-    font-family: roboto Condensed;
-    text-decoration: none;
-    color: white;
-    transition: text-shadow 0.6s;
-}
-.links_id ul a:hover{
-    text-shadow: 0px -3px 6px white,0px 4px 6px white,
-    3px 0px 6px white,-4px 0px 6px white;
-}
-.links_id ul{
-    color: white;
-    margin-top: 25px;
-}
-.links_id{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-content: flex-end;
-    width: 550px;
-    align-items: center;
-}
-
-
-/* Nosotros */
-.preguntas_nosotros{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-    width: auto;
-    height: auto;
-}
-
-.preguntas{
-    color: red;
-    font-family: roboto Condensed;
-    text-transform: uppercase;
-}
-.respuestas{
-    font-family: roboto Condensed;
-    color: black;
-    font-size: 20px;
-    -webkit-text-stroke:0.8px white;
-    
-}
-
-.nombre_item{
-    justify-self: center;
-    color: red;
-    grid-area: nom_item;
-    font-size: 20px;
-}
-.pie_imagen{
-    width: 300px;
-    height: 60px;
-}
-.precio{
-    color: white;
-    grid-area: precio;
-    font-size: 18px;
-}
-
-.contenedora{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.imagen{
-    margin: 5px;
-}
-.contenedora .imagen{
-    display: flex;
-    flex-direction: column;
-}
-.pie_imagen{
-    display: grid;
-    width: 320px;
-    grid-template-areas: "nom_item nom_item nom_item nom_item"
-                        "precio precio none carrito";
-}
-
-.carrito{
-    grid-area: carrito;
-    color: white;
-    justify-self: end;
-}
-.agregar{
-    grid-area: agregar;
-    color: white;
-    justify-self: end;
-}
-span{
-    font-family: roboto Condensed;
-}
-
-
-
-/* Vista generica de productos */
-section img{
-    height: 320px;
-    width: 320px;
-}
-
+/*Medias Querie*/
 @media(min-width:500px){
     .luna{
         height: 200px;
@@ -295,23 +37,29 @@ section img{
         height: 500px;
         width: 500px;
     }
-    .menu .navegacion .lista{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding: 15px;
-        margin: 0px;
-        list-style: none;
+    .menu{
+        .navegacion{
+            .lista{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                padding: 15px;
+                margin: 0px;
+                list-style: none;
+                li{
+                    a{
+                        list-style-type: none;
+                        margin-right: 75px;
+                        color: white;
+                        text-decoration: none;
+                        font-family: roboto Condensed;
+                        transition: text-shadow 1s;
+                    }
+                }
+            }
+        }
     }
     
-    .navegacion .lista li a{
-        list-style-type: none;
-        margin-right: 75px;
-        color: white;
-        text-decoration: none;
-        font-family: roboto Condensed;
-        transition: text-shadow 1s;
-    }
     svg{
         color: white;
         height: 22px;
