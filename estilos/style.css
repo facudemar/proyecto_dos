@@ -52,7 +52,7 @@ body {
 }
 
 .banner .saludo span:hover {
-  text-shadow: 0px -3px 6px white,0px 4px 6px white, 3px 0px 6px white,-4px 0px 6px white;
+  text-shadow: 0px -3px 6px white, 0px 4px 6px white, 3px 0px 6px white, -4px 0px 6px white;
 }
 
 .luna {
@@ -99,7 +99,7 @@ body {
 }
 
 .menu .navegacion .lista li a:hover {
-  text-shadow: 0px -3px 6px white,0px 4px 6px white;
+  text-shadow: 0px -3px 6px white, 0px 4px 6px white;
 }
 
 /*Footer*/
@@ -207,7 +207,7 @@ footer {
 }
 
 .links_id ul a:hover {
-  text-shadow: 0px -3px 6px white,0px 4px 6px white, 3px 0px     6px white,-4px 0px 6px white;
+  text-shadow: 0px -3px 6px white, 0px 4px 6px white, 3px 0px 6px white, -4px 0px 6px white;
 }
 
 /*Pie de pagina de cada prenda*/
